@@ -51,21 +51,6 @@ class TestFunctions(unittest.TestCase):
 
         from functions import get_filename_extension
 
-        result = get_filename_extension("hello.txt")
-        self.assertEqual(result, "txt", "hello.txt has extension 'txt'")
-
-        result = get_filename_extension("hello.py")
-        self.assertEqual(result, "py", "hello.py has extension 'py'")
-
-        result = get_filename_extension("data.json")
-        self.assertEqual(result, "json", "data.json has extension 'json'")
-
-        result = get_filename_extension("data.csv")
-        self.assertEqual(result, "csv", "data.csv has extension 'csv'")
-
-        result = get_filename_extension("kitty.jpg")
-        self.assertEqual(result, "jpg", "kitty.jpg has extension 'jpg'")
-
         test_cases = {
             "hello.txt": "txt",
             "hello.py": "py",
