@@ -25,19 +25,19 @@ class TestFunctions(unittest.TestCase):
         from functions import meal_time
         
         test_cases = {
-            "00:00": "nothing at this time",
-            "6:30": "nothing at this time",
-            "6:59": "nothing at this time",
+            "00:00": "nothing right now",
+            "6:30": "nothing right now",
+            "6:59": "nothing right now",
             "7:30": "breakfast",
-            "8:01": "nothing at this time",
-            "10:00": "nothing at this time",
-            "11:59": "nothing at this time",
+            "8:01": "nothing right now",
+            "10:00": "nothing right now",
+            "11:59": "nothing right now",
             "12:45": "lunch",
-            "13:01": "nothing at this time",
-            "17:59": "nothing at this time",
+            "13:01": "nothing right now",
+            "17:59": "nothing right now",
             "18:30": "dinner",
-            "19:01": "nothing at this time",
-            "23:45": "nothing at this time",
+            "19:01": "nothing right now",
+            "23:45": "nothing right now",
         }
 
         for time_string, expected_result in test_cases.items():
